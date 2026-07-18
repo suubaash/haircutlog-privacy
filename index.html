@@ -13,29 +13,33 @@
 </head>
 <body>
 <h1>Privacy Policy for HaircutLog</h1>
-<p class="updated">Last updated: July 11, 2026</p>
+<p class="updated">Last updated: July 18, 2026</p>
 
-<p>HaircutLog is a simple personal app for logging haircut dates and photos.</p>
+<p>HaircutLog is a simple personal app for logging haircut dates and photos, and for finding nearby hair salons.</p>
 
 <h2>What data the app collects</h2>
 <ul>
+  <li><strong>Account information</strong>: an email address, or basic profile info (name, email) if you sign in with Google or Apple.</li>
   <li><strong>Photos you choose to add</strong> (from your camera or photo library) when logging a haircut.</li>
   <li><strong>Dates</strong> you assign to each haircut entry.</li>
+  <li><strong>Approximate location</strong>, only when you use the "Nearby Salons" feature, to find hair salons near you.</li>
 </ul>
 
 <h2>How your data is stored</h2>
-<p>All data you enter is stored using Apple's iCloud (CloudKit) private database, tied to your own Apple ID. This means:</p>
+<p>HaircutLog uses the following third-party services to operate:</p>
 <ul>
-  <li>Your data is stored in <strong>your own iCloud account</strong>, not on any server operated by the developer.</li>
-  <li>The developer of HaircutLog cannot see, access, or collect your photos or data.</li>
-  <li>Data automatically syncs across your own devices that are signed into the same Apple ID via Apple's iCloud service.</li>
+  <li><strong>Firebase Authentication</strong> (Google) manages sign-in and stores your account identifier (email address).</li>
+  <li><strong>Firebase Firestore</strong> (Google) stores your haircut dates, associated with your account.</li>
+  <li><strong>Cloudinary</strong> stores the photos you upload.</li>
+  <li><strong>Google Places API</strong> receives your device's approximate location, only when you open the Nearby Salons tab, to return a list of nearby salons. This location is not stored by HaircutLog.</li>
 </ul>
+<p>Your haircut data is only accessible to your own account — other users of the app cannot see it. As the developer, we do not access, view, or share individual users' photos or haircut data as part of normal operation.</p>
 
 <h2>Data sharing</h2>
-<p>HaircutLog does not share, sell, or transmit your data to any third party. No analytics, advertising, or tracking services are used.</p>
+<p>HaircutLog does not sell your data or share it with advertisers. Data is only sent to the service providers listed above (Google Firebase, Cloudinary, Google Places), which process it on our behalf to make the app work. No analytics or advertising trackers are used.</p>
 
 <h2>Data deletion</h2>
-<p>You can delete any entry at any time within the app. Deleting the app and disabling iCloud sync for it (in iOS Settings) removes the data from your device and stops future syncing.</p>
+<p>You can delete any individual haircut entry at any time within the app. You can also permanently delete your entire account and all associated haircut data at any time via <strong>Account (gear icon) → Delete Account</strong> inside the app.</p>
 
 <h2>Contact</h2>
 <p>Questions about this policy can be sent to: <a href="mailto:subashchandrapoudel@gmail.com">subashchandrapoudel@gmail.com</a></p>
